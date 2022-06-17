@@ -17,6 +17,7 @@
     --color-danger-variant: #f9484a;
     --color-white: #fff;
     --color-black: #000;
+    --linear-gradient-color: linear-gradient( #f9484a,rgb(123, 7, 7));
 
     --container-width-lg: 95%;
     --container-width-md: 90%;
@@ -28,7 +29,7 @@
 body {
     font-family: 'Poppins',sans-serif;
     line-height: 1.7;
-    color: var(--color-black);
+    color: var(--color-white);
     background:var(--color-white);
 }
 
@@ -62,8 +63,8 @@ h4{
     font-size: 1.3rem;
 }
 
-a{
-    color: var(--color-white);
+a:hover{
+    color: var(--color-secondary) !important;
 }
 
 img{
@@ -86,6 +87,6 @@ img{
 .btn:hover{
     border: 0.15rem solid var(--color-danger-variant);
     background: var(--color-danger-variant);
-    color: var(--color-white);
+    color: var(--color-white) !important;
 }
 

@@ -4,9 +4,17 @@
 }
 
 .navbar-brand  img{
-    width: 10rem;
+    width: 8rem;
 }
 
 .nav-item a {
     font-weight: 500;
+}
+
+.nav-item .nav-link, .nav-button{
+    color: var(--color-white);
+}
+
+.bg-light{
+    transition: var(--transition);
 }
