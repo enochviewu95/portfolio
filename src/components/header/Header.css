@@ -1,0 +1,93 @@
+header{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 100px;
+    text-align: center;
+    transform-style: preserve-3d;
+}
+
+header::before{
+    animation: fade-slide-down 2s .5s cubic-bezier(0,.5,0,1) forwards;
+    background: linear-gradient(to bottom, rgba(0,0,0,0),rgba(0,0,0,.8)),
+        url('../../assets/images/background_five.jpg') no-repeat bottom;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+header::after{
+    animation: rotate-up .5s .5s cubic-bezier(0,.5,0,1) forwards;
+}
+
+.header-title, .header-subtitle{
+    color: var(--color-white);
+}
+
+.header-subtitle{
+    margin-bottom: 3rem;
+    text-transform:uppercase;
+}
+
+.header-button{
+    transform: translateZ(.1px);
+    position: relative;
+    z-index: 10;
+}
+
+.animate-pop-in{
+    animation: pop-in .6s cubic-bezier(0,.9,.3,1.2) forwards;
+    opacity: 0;
+}
+
+.header-title{
+    animation-delay: .6s;
+}
+
+.header-subtitle{
+    animation-delay: .8s;
+}
+
+.header-button{
+    animation-delay: 1s
+}
+
+
+/*Animation*/
+@keyframes fade-slide-down{
+    0%{
+        opacity: 0;
+        transform: translateY(-4rem);
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes pop-in{
+    0%{
+        opacity: 0;
+        transform: translateY(-4rem) scale(.8);
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes rotate-up{
+    100%{
+        transform: rotateZ(-4deg);
+    }
+}

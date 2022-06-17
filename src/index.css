@@ -32,11 +32,6 @@ body {
     background:var(--color-white);
 }
 
-.container{
-    width: var(--container-width-lg);
-    max-width: var(--container-width-lg);
-    margin: 0 auto;
-}
 
 section{
     padding: 6rem 0;;
@@ -83,7 +78,7 @@ img{
     border: 0.15rem solid var(--color-danger-variant);
     padding: .5rem 1rem;
     border-radius: 0.3rem;
-    color: var(--color-black);
+    color: var(--color-white);
     font-weight: 500;
     transition: var(--transition);
 }
