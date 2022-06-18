@@ -1,32 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from 'react'
-import logo_black from '../../assets/icons/logo.png'
-import logo_white from '../../assets/icons/logo-white.png'
-
-import './Navbar.css';
+import './index.css';
 
 
-function Navbar() {
-
-    //Declaration of state
-    const [imageUrl, setImageUrl] = useState(logo_white)
-
-    window.addEventListener('scroll', () => {
-        document.querySelector('nav').classList.toggle('bg-light', window.scrollY > 0);
-        document.querySelector('nav').classList.toggle('bg-opacity-75', window.scrollY > 0);
-        document.querySelector('.btn').classList.toggle('text-dark', window.scrollY > 0);
-
-        document.querySelectorAll('.nav-link').forEach(element => {
-            element.classList.toggle('text-dark', window.scrollY > 0)
-        })
-
-        if (window.scrollY > 0) {
-            setImageUrl(logo_black)
-        } else {
-            setImageUrl(logo_white)
-        }
-    })
-
+/* A React component. */
+export const Navbar = ({ imageUrl }) => {
     return (
         <nav className="navbar fixed-top navbar-expand-lg">
             <div className="container">
@@ -57,4 +34,3 @@ function Navbar() {
     )
 }
 
-export default Navbar

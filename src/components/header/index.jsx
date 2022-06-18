@@ -1,30 +1,12 @@
-import React, { useEffect } from 'react'
-import { isElementInViewport, scroll } from '../../utilities/ElementInViewport'
+
 
 import icon_one from '../../assets/icons/analytics.svg'
 import icon_two from '../../assets/icons/window.svg'
 import icon_three from '../../assets/icons/database.svg'
-import './Header.css'
+import './index.css'
 
-function Header() {
-
-    useEffect(() => {
-        const elementsToShow = document.querySelectorAll('.card');
-        const loop = () => {
-            elementsToShow.forEach(element => {
-                console.log('Element', element)
-                if (isElementInViewport(element)) {
-                    element.classList.add('is-visible')
-                } else {
-                    element.classList.remove('is-visible')
-                }
-            });
-
-            scroll(loop)
-        }
-
-        loop();
-    })
+/* A function that returns a header. */
+export const  Header = () => {
 
     return (
         <header>
@@ -59,5 +41,3 @@ function Header() {
         </header>
     )
 }
-
-export default Header
