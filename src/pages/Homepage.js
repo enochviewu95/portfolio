@@ -6,7 +6,7 @@ import { displayOnScrollElement } from '../utilities/ElementInViewport'
 
 import logo_black from '../assets/icons/logo.png'
 import logo_white from '../assets/icons/logo-white.png'
-import { navbarScrollerBackgroundChange } from '../utilities/Scroller'
+import { navbarScrollerBackgroundChange } from '../utilities/NavScrollBackgroundChange'
 
 
 function Homepage() {
