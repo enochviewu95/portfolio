@@ -1,0 +1,130 @@
+.about-experience-container h1 {
+    font-weight: 700;
+
+}
+
+.about-container {
+    color: var(--color-black);
+    display: grid;
+    text-align: start;
+    grid-template-columns: 1fr 2fr;
+}
+
+.about-experience-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 45rem;
+}
+
+.about-experience-image {
+    width: 20rem;
+    border-radius: 10px;
+    position: relative;
+    opacity: 0;
+    transform: translateX(-50rem) scale(.2);
+    transition: transform .8s 1s cubic-bezier(0, .9, .3, 1.2),
+        opacity .8s 1s ease-out;
+    will-change: transform, opacity;
+}
+
+.about-experience-image.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+.about-experience-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: start;
+    opacity: 0;
+    transform: translateX(50rem) scale(.8);
+    transition: transform .8s .25s cubic-bezier(0, .9, .3, 1.2),
+        opacity .3s .25s ease-out;
+    will-change: transform, opacity;
+}
+
+.about-experience-content.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+.about-experience-content h4,
+.about-experiences {
+    text-transform: uppercase;
+    background-image: var(--linear-gradient-color);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+
+.about-experience-analytics {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: start;
+    border-top: 1px solid var(--color-grey);
+}
+
+.about-experiences {
+    padding: 2rem 0;
+    position: relative;
+    opacity: 0;
+    transform: translateY(4rem) scale(.8);
+    transition: transform .8s .30s cubic-bezier(0, .9, .3, 1.2),
+        opacity .3s .30s ease-out;
+    will-change: transform, opacity;
+}
+
+.about-experiences.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+
+.about-experiences:nth-child(1) {
+    transition-delay: 500ms;
+}
+
+.about-experiences:nth-child(2) {
+    transition-delay: 700ms;
+}
+
+.about-experiences:nth-child(3) {
+    transition-delay: 900ms;
+}
+
+
+.about-experiences::before {
+    content: "";
+    background: var(--color-secondary);
+    width: 2rem;
+    height: 1px;
+    left: 0;
+    top: -1px;
+    position: absolute;
+}
+
+
+.about-experiences::before {
+    content: "";
+    background: var(--color-secondary);
+    width: 2rem;
+    height: 1px;
+    left: 0;
+    top: -1px;
+    position: absolute;
+}
+
+
+
+@keyframes no-transform {
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
