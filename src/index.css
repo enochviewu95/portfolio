@@ -17,6 +17,7 @@
     --color-danger-variant: #f9484a;
     --color-white: #fff;
     --color-black: #000;
+    --color-grey: rgb(227, 227, 227);
     --linear-gradient-color: linear-gradient( #f9484a,rgb(123, 7, 7));
 
     --container-width-lg: 95%;
@@ -35,7 +36,18 @@ body {
 
 
 section{
-    padding: 6rem 0;;
+    padding: 6rem 0;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 100px;
+    text-align: center;
+    transform-style: preserve-3d;
 }
 
 section h2{

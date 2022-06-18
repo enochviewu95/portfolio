@@ -24,7 +24,6 @@ header::before {
     left: 0;
     z-index: -1;
     transform: translateY(-4rem);
-    ;
 }
 
 .header-main {
