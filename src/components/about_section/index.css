@@ -18,14 +18,30 @@
 }
 
 .about-experience-image {
-    width: 20rem;
-    border-radius: 10px;
+    width: 25vw;
+    height: 80vh;
+    max-width: 30rem;
+    margin-top: 1rem;
     position: relative;
+    perspective: 100px;
+    transform-style: preserve-3d;
     opacity: 0;
-    transform: translateX(-50rem) scale(.2);
-    transition: transform .8s 1s cubic-bezier(0, .9, .3, 1.2),
-        opacity .8s 1s ease-out;
+    transform: translateX(-30rem) scale(.8);
+    transition: transform .8s 1.5s cubic-bezier(0, .5, 0, 1),
+        opacity .8s 1.5s ease-out;
     will-change: transform, opacity;
+}
+
+.about-experience-image::before {
+    width: 25vw;
+    height: 80vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(63, 3, 3)),
+        url('../../assets/images/portrait_two.jpg') no-repeat bottom;
+    border-radius: 10px;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    z-index: -1;    
 }
 
 .about-experience-image.is-visible {
@@ -39,9 +55,9 @@
     justify-content: flex-end;
     text-align: start;
     opacity: 0;
-    transform: translateX(50rem) scale(.8);
-    transition: transform .8s .25s cubic-bezier(0, .9, .3, 1.2),
-        opacity .3s .25s ease-out;
+    transform: translateX(4rem) scale(.8);
+    transition: transform .8s .25s cubic-bezier(0, .5, 0, 1),
+        opacity .8s .25s ease-out;
     will-change: transform, opacity;
 }
 

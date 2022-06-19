@@ -12,9 +12,9 @@ export const  Header = () => {
         <header>
             <div className=' container header_container header-content'>
                 <div className='header-main'>
-                    <h1 className='header-title animate-pop-in'>Knight Master Development</h1>
-                    <h3 className='header-subtitle animate-pop-in'>A useful start for your projects</h3>
-                    <p className='header-button animate-pop-in'><a href="/" className='btn'>Get started today</a></p>
+                    <h1 className='header-title'>Knight Master Development</h1>
+                    <h3 className='header-subtitle'>A useful start for your projects</h3>
+                    <p className='header-button'><a href="/" className='btn'>Get started today</a></p>
                 </div>
 
                 <div className='header-articles'>

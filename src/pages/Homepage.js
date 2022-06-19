@@ -17,6 +17,9 @@ function Homepage() {
 
     useEffect(() => {
         navbarScrollerBackgroundChange({ setImageUrl: setImageUrl, logoBlack: logo_black, logoWhite: logo_white })
+        displayOnScrollElement({ componentClassName: '.header-title' });
+        displayOnScrollElement({ componentClassName: '.header-subtitle' });
+        displayOnScrollElement({ componentClassName: '.header-button' });
         displayOnScrollElement({ componentClassName: '.card' });
         displayOnScrollElement({ componentClassName: '.about-experience-content' });
         displayOnScrollElement({ componentClassName: '.about-experiences' });

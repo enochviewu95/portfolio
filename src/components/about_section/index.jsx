@@ -7,7 +7,9 @@ export const AboutSection = () => {
     return (
         <section className='container about-container'>
 
-            <img className='about-experience-image' src={image_one} alt='About' />
+            <div className='about-experience-image'>
+                <p></p>
+            </div>
             <div className='about-experience-container'>
                 <div className='about-experience-content'>
                     <h4>About us</h4>
