@@ -22,5 +22,4 @@ export const navbarScrollerBackgroundChange = ({ setImageUrl, logoBlack, logoWhi
 
 export const onCardIconChange = (event) => {
     event.stopPropagation();
-    console.log('Event',event)
 }
