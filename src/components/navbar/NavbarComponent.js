@@ -12,7 +12,6 @@ export const NavbarComponenet = () => {
 
   useEffect(() => {
     navbarScrollerBackgroundChange({ setImageUrl: setImageUrl, logoBlack: logo_black, logoWhite: logo_white })
-
   }, [setImageUrl])
 
 

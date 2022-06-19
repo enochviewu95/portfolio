@@ -5,6 +5,7 @@ import Bag from '../../assets/icons/bag.svg'
 import Mobile from '../../assets/icons/mobile.svg'
 import './PopularService.css'
 import { CardComponent } from '../../components/cards/CardComponent'
+import { onCardIconChange } from '../../utilities/BackgroundChange'
 
 export const PopularService = () => {
     return (
@@ -17,16 +18,16 @@ export const PopularService = () => {
                 </div>
                 <div className='popular-service-articles'>
                     <article>
-                        <CardComponent icon={Apps} />
+                        <CardComponent icon={Apps} mouseHoverListener={onCardIconChange}/>
                     </article>
                     <article>
-                        <CardComponent icon={Analysis} />
+                        <CardComponent icon={Analysis} mouseHoverListener={onCardIconChange}/>
                     </article>
                     <article>
-                        <CardComponent icon={Bag} />
+                        <CardComponent icon={Bag} mouseHoverListener={onCardIconChange}/>
                     </article>
                     <article>
-                        <CardComponent icon={Mobile} />
+                        <CardComponent icon={Mobile} mouseHoverListener={onCardIconChange}/>
                     </article>
                 </div>
             </div>

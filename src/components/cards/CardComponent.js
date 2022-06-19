@@ -1,15 +1,10 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import { Card } from './Card'
 
-import { onCardHoverBackgroundChange} from '../../utilities/BackgroundChange'
 
-export const CardComponent = ({icon}) => {
-
-  useEffect(()=>{
-    onCardHoverBackgroundChange();
-})
+export const CardComponent = ({icon,mouseHoverListener}) => {
 
   return (
-    <Card icon={icon}/>
+    <Card icon={icon} onMouseHoverListener={mouseHoverListener}/>
   )
 }
