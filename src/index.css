@@ -18,7 +18,7 @@
     --color-white: #fff;
     --color-black: #000;
     --color-grey: rgb(227, 227, 227);
-    --linear-gradient-color: linear-gradient( #f9484a,rgb(123, 7, 7));
+    --linear-gradient-color: linear-gradient( #fe0944,rgb(206, 126, 126));
 
     --container-width-lg: 95%;
     --container-width-md: 90%;
@@ -50,10 +50,6 @@ section{
     transform-style: preserve-3d;
 }
 
-section h2{
-    text-align:center;
-    margin-bottom: 4rem;
-}
 
 h1,h2,h3,h4,h5{
     line-height: 1.2;

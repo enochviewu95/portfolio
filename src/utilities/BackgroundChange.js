@@ -19,3 +19,13 @@ export const navbarScrollerBackgroundChange = ({ setImageUrl, logoBlack, logoWhi
         }
     })
 }
+
+export const onCardHoverBackgroundChange = ()=>{
+    document.querySelectorAll('.card-custom').forEach(element => {
+        element.addEventListener('mouseover',changeBackground)
+    })
+}
+
+const changeBackground = (event) =>{
+    console.log('event',event)
+}
