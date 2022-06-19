@@ -48,6 +48,7 @@ section{
     perspective: 100px;
     text-align: center;
     transform-style: preserve-3d;
+    color: var(--color-black);
 }
 
 
