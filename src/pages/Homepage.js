@@ -3,6 +3,7 @@ import { PopularServiceSection } from '../sections/popular_service/PopularServic
 import { HeaderSection } from '../sections/header/HeaderSection'
 import { AboutSection } from '../sections/about/AboutSection'
 import { ServicesSection } from '../sections/services/ServicesSection'
+import { FooterComponent } from '../components/footer/FooterComponent'
 
 
 function Homepage() {
@@ -14,6 +15,7 @@ function Homepage() {
             <AboutSection />
             <PopularServiceSection />
             <ServicesSection/>
+            <FooterComponent/>
         </>
     )
 }

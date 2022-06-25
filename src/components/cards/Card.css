@@ -4,7 +4,7 @@
     grid-template-columns: 1fr 6fr;
     padding: .5rem .5rem;
     transition: var(--transition);
-    transition-duration: .8s;
+    transition-duration: .3s;
 }
 
 .card-custom:hover{

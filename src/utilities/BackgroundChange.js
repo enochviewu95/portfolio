@@ -20,6 +20,6 @@ export const navbarScrollerBackgroundChange = ({ setImageUrl, logoBlack, logoWhi
     })
 }
 
-export const onCardIconChange = (event) => {
-    event.stopPropagation();
+export const onCardHover = ({setIcon,iconName}) => {
+    setIcon(iconName);
 }

@@ -2,37 +2,35 @@
     width: 18rem;
     height: 70vh;
     position: relative;
-    background-color: transparent !important;
     border: none !important;
     color: var(--color-white);
-    border-radius: 10px;
+    border-radius: .9rem !important;
+    transition: var(--transition);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(63, 3, 3, .4)),
+        url('../../assets/images/portrait_one.jpg') no-repeat;
+    background-size: cover;
 }
 
 .swiper-card::before {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)),
-        url('../../assets/images/portrait_one.jpg') no-repeat bottom;
     width: 18rem;
     height: 70vh;
     background-size: cover;
     content: "";
     position: absolute;
-    opacity: 1;
-    border-radius: 10px;
+    border-radius: .9rem;
     z-index: -1;
     transition: var(--transition);
 }
 
-.swiper-card:hover::before{
+.swiper-card:hover::before {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(63, 3, 3, .5)) !important;
+}
+
+.swiper-card:hover {
     transform: translateY(-.8rem);
-    border-radius:10px
 }
 
-.swiper-card:hover{
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(63, 3, 3));
-    border-radius: 10px;
-}
-
-.swiper-card .card-body{
+.swiper-card .card-body {
     display: flex !important;
     flex-direction: column !important;
     justify-content: flex-end !important;
@@ -41,6 +39,6 @@
     margin-bottom: 3rem;
 }
 
-.swiper-card h4{
+.swiper-card h4 {
     margin-bottom: 2rem;
 }
