@@ -1,0 +1,71 @@
+footer{
+    height: 80vh;
+}
+
+.footer-left-content{
+    width: 20rem;
+    word-spacing: 3px;
+    letter-spacing: 3px;
+    line-height: 20px;
+}
+
+
+footer h1{
+    font-size: 4em;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+
+
+.footer-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height:100%;
+}
+.footer-left,
+.footer-right {
+    width: 100%;
+}
+
+.footer-left {
+    background: linear-gradient(to bottom, rgba(15, 12, 12, 0.5), rgba(122, 5, 5, 0.8)),
+        url('../../assets/images/work.jpg') no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-top-right-radius: 10px;
+}
+
+.footer-right{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6)),
+    url('../../assets/images/footer-backrgound.jpg') no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-self: flex-end;
+    height: 80%
+}
+
+.footer-right a {
+    text-decoration: none;
+    color: #fff;
+    text-align: start !important;
+}
+
+ul{
+    padding-left: 0 !important;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .btn{
+    text-transform: uppercase;
+}

@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import './index.css';
+import './Navbar.css';
 
 
 /* A React component. */

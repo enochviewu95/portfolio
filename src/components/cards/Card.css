@@ -1,0 +1,23 @@
+.card-custom{
+    text-align: start;
+    display: grid !important;
+    grid-template-columns: 1fr 6fr;
+    padding: .5rem .5rem;
+    transition: var(--transition);
+    transition-duration: .3s;
+}
+
+.card-custom:hover{
+    transform: translateY(-.5rem);
+    background: var(--linear-gradient-color);
+    color: var(--color-white);
+    border: none;
+}
+
+.card-custom img{
+    width: 5rem;
+}
+
+.card-custom h2{
+    margin-bottom: 1rem;
+}

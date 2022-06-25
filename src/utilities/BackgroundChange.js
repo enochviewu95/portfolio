@@ -19,3 +19,7 @@ export const navbarScrollerBackgroundChange = ({ setImageUrl, logoBlack, logoWhi
         }
     })
 }
+
+export const onCardHover = ({setIcon,iconName}) => {
+    setIcon(iconName);
+}
