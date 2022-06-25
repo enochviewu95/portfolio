@@ -69,3 +69,26 @@ ul{
 footer .btn{
     text-transform: uppercase;
 }
+
+@media screen and (max-width:400px) {
+    .footer-container{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .footer-left{
+        border-radius: 0;
+        font-size: .5em;
+        padding:4rem 1rem;
+        align-items: flex-start;
+    }
+
+    .footer-right{
+        align-self: unset;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+        line-height: 3;
+    }
+}

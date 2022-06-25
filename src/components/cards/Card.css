@@ -21,3 +21,13 @@
 .card-custom h2{
     margin-bottom: 1rem;
 }
+
+@media screen and (max-width:400px) {
+    .card-custom{
+        grid-template-columns: 1fr;
+    }
+
+    .card-custom img{
+        width: 2.5rem;
+    }
+}

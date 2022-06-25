@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Services.css'
 import { SwiperCardComponent } from '../../components/swiper_card/SwiperCardComponent';
 
@@ -9,9 +9,17 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css'
 import 'swiper/css/pagination'
 
-
-
 export const Services = () => {
+
+    const [slidesPerView,setSlidedPerView] = useState(4)
+
+    useEffect(()=>{
+        const windowsWidth = window.screen.width;
+        if(windowsWidth <= 400){
+            setSlidedPerView(1);
+        }
+    },[])
+
     return (
         <section>
             <div className='container-fluid service-container'>
@@ -23,7 +31,7 @@ export const Services = () => {
                 <Swiper
                     modules={[Mousewheel, Pagination]}
                     spaceBetween={50}
-                    slidesPerView={4}
+                    slidesPerView={slidesPerView}
                     pagination={{
                         dynamicBullets: true,
                         clickable: true

@@ -42,3 +42,15 @@
 .swiper-card h4 {
     margin-bottom: 2rem;
 }
+
+@media screen and (max-width:400px) {
+    .swiper-card{
+        height: 60vh;
+        border-radius: .5rem !important;
+    }
+
+    .swiper-card::before{
+        height: 60vh;
+        border-radius: .5rem !important;
+    }
+}

@@ -150,3 +150,42 @@
         transform: none;
     }
 }
+
+@media screen and (max-width:400px) {
+    .about-container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .about-experience-container{
+        width: 100%;
+    }
+
+
+    .about-experience-image{
+        width: 100%;
+        height: 50vh;
+        border-radius: 10px;
+    }
+
+    .about-experience-content h4{
+        font-size: 1em;
+    }
+
+    .about-experience-content h1{
+        font-size: 1.5em;
+    }
+
+    .about-experience-image::before{
+        width: 100%;
+        height: 50vh;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .about-experiences h4, .about-experiences h1{
+        font-size: 1em;
+        width: 5rem;
+    }
+}

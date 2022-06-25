@@ -117,3 +117,26 @@ header::before {
         transform: none;
     }
 }
+
+
+@media screen and (max-width:400px) {
+    header{
+        font-size: .5em;
+        padding: 1rem 1rem;
+    }
+
+    .header-main {
+        width: 20rem;
+        font-size: .8em;
+    }
+
+    .header-subtitle{
+        font-size: 4em;
+    }
+
+    .header-articles{
+        height: auto;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+}

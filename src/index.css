@@ -99,3 +99,10 @@ img{
     color: var(--color-white) !important;
 }
 
+@media screen and (max-width:400px) {
+    section{
+        height: auto;
+        padding: 1rem 1rem;
+    }
+}
+

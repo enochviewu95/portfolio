@@ -33,3 +33,16 @@
 .header-card:nth-child(3) {
     transition-delay: 900ms;
 }
+
+
+@media  screen and (max-width:400px) {
+    .header-card{
+        width: 10rem;
+        height: auto;
+    }
+
+    .header-card img{
+        width: 4rem;
+        padding: .3rem .3rem;
+    }
+}
