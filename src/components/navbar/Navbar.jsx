@@ -1,9 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import { useState } from 'react';
 import './Navbar.css';
 
 
 /* A React component. */
-export const Navbar = ({ imageUrl }) => {
+export const Navbar = ({ imageUrl,menu }) => {
+
+
     return (
         <nav className="navbar fixed-top navbar-expand-lg">
             <div className="container">
@@ -11,7 +14,9 @@ export const Navbar = ({ imageUrl }) => {
                     <img className='float-start' src={imageUrl} alt="page logo" />
                 </a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
+                    <span className="navbar-toggler-icon">
+                        <img src={menu} alt=""  />
+                    </span>
                 </button>
                 <div className="collapse navbar-collapse flex-row justify-content-end" id="navbarSupportedContent">
                     <ul className="navbar-nav me-5 mb-2 mb-lg-0">
